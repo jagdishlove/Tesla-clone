@@ -1,0 +1,43 @@
+@import url(http://db.onlinewebfonts.com/c/9a2bc11be56851dde98c1b49302cc21a?family=Gotham+Medium);
+
+
+.header{
+  display: flex;
+ font-size: 15px;
+ position: fixed;
+ top:0;
+ left:0;
+ right:0;
+ 
+}
+img {
+  padding: 20px;
+  width: 100px;
+  height: 13px;
+  object-fit: fill;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  justify-content:center;
+  gap:15px;
+  font-family: "Gotham Medium";
+  flex:1 80%;
+  margin-left: 50px;;
+
+
+
+
+}
+
+.right{
+  font-family: "Gotham Medium";
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap:20px;
+  width:300px;
+  
+  
+}
