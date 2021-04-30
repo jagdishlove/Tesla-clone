@@ -13,17 +13,17 @@ import MailIcon from "@material-ui/icons/Mail";
 
 const useStyles = makeStyles({
   list: {
-    width: 250
+    width: 250,
   },
   fullList: {
-    width: "auto"
-  }
+    width: "auto",
+  },
 });
 
-const  Burger = () => {
+const Burger = () => {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    right: false
+    right: false,
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -41,33 +41,35 @@ const  Burger = () => {
   const list = (anchor) => (
     <div
       className={clsx(classes.list, {
-        [classes.fullList]: anchor === "top" || anchor === "bottom"
+        [classes.fullList]: anchor === "top" || anchor === "bottom",
       })}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+        {[
+          "EXISTING INVENTORY",
+          "USED INVENTORY",
+          "TRADE-IN",
+          "CYBERTRUCK",
+          "ROADSTER",
+          "SEMI",
+          "CHARGING",
+          "POWERWALL",
+          "COMMERCIAL ENERGY",
+          "UTILITIES",
+          "TEST DRIVE",
+          "FIND US",
+          "SUPPORT",
+          "UNITED STATES",
+        ].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
       </List>
       <Divider />
-      <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
     </div>
   );
 
@@ -88,7 +90,5 @@ const  Burger = () => {
       ))}
     </div>
   );
-}
+};
 export default Burger;
-
-
