@@ -1,13 +1,14 @@
 import React from "react";
 import "./Header.css";
-import Burger from "./Burger";
+
+import logo from '../assets/teslaLogo.svg'
 
 const Header = () => {
   return (
     <div>
       <div className="header">
-        <div className="image">
-          <img src="../assets/teslaLogoSmall.svg" alt=""></img>
+        <div style={{backgroundImage:`URL(${logo})`}} className="image">
+          
         </div>
         <div className="center">
           <p>MODEL S</p>
@@ -22,7 +23,7 @@ const Header = () => {
           <p>TESLA ACCOUNT</p>
         </div>
         <div className="burger">
-          <Burger/>
+          
         </div>
       </div>
     </div>

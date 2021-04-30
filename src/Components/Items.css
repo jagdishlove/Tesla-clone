@@ -1,0 +1,46 @@
+@import url(http://db.onlinewebfonts.com/c/9a2bc11be56851dde98c1b49302cc21a?family=Gotham+Medium);
+
+
+.items {
+  font-family: "Gotham Medium";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 200px;
+}
+
+div.buttons {
+  
+  display: flex;
+  margin-top: 10em;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex: 1 80%;
+}
+
+button {
+    font-family: "Gotham Medium";
+  border-radius: 20px;
+  outline: none;
+  height: 40px;
+  width: 18em;
+}
+
+button:nth-child(1){
+    background-color: rgb(52,52,57);
+    color: white;
+    border:none;
+    opacity: 0.9;
+}
+
+button:nth-child(2){
+    background-color:#DFDBDB;
+    color:rgb(23,26,32);
+    opacity: 0.8;
+    border:none;
+}
+
